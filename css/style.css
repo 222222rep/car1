@@ -242,7 +242,7 @@ header {
       padding-left: 2em;
       cursor: pointer; }
     header .dop_window .Location::before {
-      content: url("/img/location.svg");
+      content: url("img/location.svg");
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
