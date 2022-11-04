@@ -193,7 +193,10 @@ header {
           display: none; } }
     header .header_dop_window .arr {
       position: relative;
-      padding: 1em; }
+      padding: 1em;
+      -webkit-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
       @media (max-width: 700px) {
         header .header_dop_window .arr {
           padding: em; } }
@@ -212,6 +215,10 @@ header {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg); }
+    header .header_dop_window .rotate {
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
   header .header_dop_window:active {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -242,7 +249,7 @@ header {
       padding-left: 2em;
       cursor: pointer; }
     header .dop_window .Location::before {
-      content: url("img/location.svg");
+      content: url("/img/location.svg");
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
